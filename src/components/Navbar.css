@@ -1,3 +1,7 @@
+nav{
+    position: fixed;
+    z-index: 100;
+}
 .navbar-collapse{
     display: inline-block;
     float: right;
