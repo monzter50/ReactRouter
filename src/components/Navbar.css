@@ -1,0 +1,101 @@
+.navbar-collapse{
+    display: inline-block;
+    float: right;
+}
+.navbar-brand {
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    line-height: inherit;
+    padding: 1em;
+    color: #ffff;
+    font-weight: bold;
+}
+.navbar{
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    display: inline-block;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding-right: 16px;
+
+}
+.navbar-nav li{
+    float: left;
+}
+.navbar-nav li a{
+    display: block;
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.2s ease;
+
+}
+.navbar-nav li a:hover{
+    color: #2072CC;
+}
+.navbar-toggler{
+    display: none;
+    border: none;
+    margin: 0;
+    background: transparent;
+
+}
+#menuanim{
+    width: 50px;
+    height: 30px;
+    position: relative;
+    margin: 0;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+#menuanim span{
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: white;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+}
+#menuanim span:nth-child(1){
+     top: 0;
+}
+#menuanim span:nth-child(2){
+     top: 12px;
+}
+#menuanim span:nth-child(3){
+     top: 12px;
+}
+#menuanim span:nth-child(4){
+     top: 25px;
+}
+@media screen and (max-width: 900px) {
+    .collapse{
+        display: none ;
+    }
+    .show{
+        display: block;
+        text-align: center;
+        flex-basis: 100%;
+        float: none;
+    }
+    .show ul li{
+        display: block;
+        text-align: center;
+        float: none;
+    }
+    .navbar-toggler {
+        display: inline-block;
+        float: right;
+        margin: 0.8em;
+    }
+}
